@@ -1,0 +1,25 @@
+ <!-- header -->
+   
+<div class="header">
+    <div class="container">
+        <div class="header__logo"><a href="#">BerYoga</a></div>
+        <div class="header__nav">
+           <a href="#" class="header__nav-link">Home</a>
+            <a href="#" class="header__nav-link">About Us</a>
+            <a href="#" class="header__nav-link">Contact</a>
+            <a href="#" class="header__nav-link">Pricing</a>
+         
+        </div>
+       
+    </div>
+    
+     <div class="header__content">
+     
+     <h2 class="header-title">Путешествие всегда хорошая идея</h2>
+     <h3 class="header-subtitle">Турпоходы по дикой природе</h3>
+     
+     </div>
+     
+</div>
+   
+  <!--// header -->
