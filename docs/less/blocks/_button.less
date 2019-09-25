@@ -5,11 +5,11 @@
   font-weight: 400;
   color:#fff;
   font-size: 18px;
-  padding: 12px 46px 12px;
+  padding: 8px 43px 8px;
   border-radius: 50px;
-    margin-left: 50px;
-    text-decoration: none;
-    margin-top: -4px;
+  text-decoration: none;
+  margin-top: -4px;
+  cursor: pointer;
 }
 .menu--button:hover{
   color:#fff;
@@ -18,27 +18,85 @@
 }
 
 .header-button {
-    padding-top: 40px;
+    padding-top: 45px;
+    width: 550px;
+    cursor: pointer;
     
 }
 
 .header-button__on {
- display: inline-block;
-  background-color: transparent;
-  font-family: 'Fivo Sans';
-  font-weight: 400;
-  color: @coralHeading;
-  font-size: 18px;
-  padding: 12px 46px 12px;
+    display: inline-block;
+    background-color: transparent;
+    font-weight: 300;
+    color: @coralHeading;
+    font-size: 20px;
+    padding: 22px 76px 20px;
     border: 1px solid @coralHeading;
-  border-radius: 50px;
-    margin-left: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
     text-decoration: none;
     margin-top: -4px;
+    cursor: pointer;
 }
 .header-button__on:hover{
-  color:#fff;
-  background-color: @coralHeading;
-    box-shadow: 0px 22px 23.52px 0.48px rgba(226, 88, 91, 1);
-  text-decoration: none;   
+     color:#fff;
+     background-color: #e1138c;
+     box-shadow: 0px 22px 23.52px 0.48px rgba(215, 114, 157, 0.55);
+     border: 1px solid #d7729d;
+     text-decoration: none;
+     cursor: pointer;
 }
+
+
+.primary {
+     color:#fff;
+     background-color: @coralHeading;
+     box-shadow: -8px 10px 23.52px 0.48px rgba(226, 88, 91, 0.55);
+     text-decoration: none; 
+     cursor: pointer;  
+}
+
+.button--blue {
+      display: inline-block;
+      background-color: #8ec7fb;
+      font-weight: 400;
+      color: #fff;
+      font-size: 18px;
+      padding: 27px 36px 25px;
+      border-radius: 38px;
+      margin-right: 20px;
+      text-decoration: none;
+      margin-top: 40px;
+      background-image: -moz-linear-gradient( 66deg, rgb(95,206,245) 0%, rgb(131,228,252) 100%);
+      background-image: -webkit-linear-gradient( 66deg, rgb(95,206,245) 0%, rgb(131,228,252) 100%);
+      background-image: -ms-linear-gradient( 66deg, rgb(95,206,245) 0%, rgb(131,228,252) 100%);
+      box-shadow: -15px 15px 23.52px 0.48px rgba(95, 206, 244, 0.30);
+    
+        &:hover, &:active, &:focus {
+           color:  #fff;
+           text-decoration: none;
+           cursor: pointer;
+ }
+     
+}
+
+.button--coral {
+     display: inline-block;
+     background-color: @coralHeading;
+     font-weight: 400;
+     color: #fff;
+     font-size: 18px;
+     padding: 27px 36px 25px;
+     border-radius: 38px;
+     margin-right: 20px;
+     text-decoration: none;
+     margin-top: 40px;
+     box-shadow: -15px 15px 23.52px 0.48px rgba(226, 88, 91, 0.29);
+           
+       &:hover, &:active, &:focus {
+           color:  #fff;
+           text-decoration: none;
+           cursor: pointer;
+ }
+}
+

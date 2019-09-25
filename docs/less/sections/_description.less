@@ -1,0 +1,48 @@
+.container__description {
+    width: 100%;
+//    height: 800px;
+    margin-top: 280px;
+    margin-left: auto;
+    margin-right: auto;
+        
+      @media (min-width: 1920px) {
+      width: 1700px;  
+    }
+
+    
+    
+}
+
+.heading {
+    margin-bottom: 80px;
+}
+
+.description__img {
+    display: none;
+    
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.description__content {
+//    width: 620px;
+//    
+    ul {
+         list-style-type: none;
+    
+    li {
+        
+            &:before {
+				content: "";
+				width: 31px;
+				height: 24px;
+				background-image: url("../img/images/ceklist.png");
+				background-repeat: no-repeat;
+				background-position: left 2px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+    }
+  }
+}
