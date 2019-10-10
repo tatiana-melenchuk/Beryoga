@@ -8,8 +8,37 @@
     }
 }
 
+.benefit-block-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+//    width: 1300px;
+    margin: 0 auto;
+    
+     @media (min-width: 992px) {
+      width: 850px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    
+    @media (min-width: 1200px) {
+      width: 1000px; 
+      flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    @media (min-width: 1500px) {
+      width: 1300px;
+      flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
 .benefit-block {
-    margin-right: 100px;
+    max-width: 280px;
+    //    margin-right: 100px;
 }
 
 

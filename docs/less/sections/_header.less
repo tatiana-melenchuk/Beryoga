@@ -2,18 +2,28 @@
 position: relative;
 }
     
-.container__header--menu {
+.header-menu-wrapper {
    width: 250px;
    margin-left: auto;
    margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 40px;
     
+    @media (min-width: 768px) {
+       padding-top: 60px;
+       padding-bottom: 60px;
+        margin-bottom: 120px;
+    }
           @media(min-width: 992px){
-       width: 900px; 
+       width: 950px; 
     }
     
+     @media(min-width: 1200px){
+       width: 1100px; 
+    }
     
-        @media(min-width: 1200px){
-//       width: 1100px; 
+     @media(min-width: 1500px){
+       width: 1300px; 
     }
     
       @media(min-width: 1800px){
@@ -51,12 +61,54 @@ position: relative;
     
 } 
 
-.current {
+.menu__link {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #1c2056;
+    text-decoration: none;
+    margin-right: 75px;
+    cursor: pointer;  
+    
+    &:last-child {
+			margin-right: 0px;
+		}
+    
+    &:hover, &:active, &:focus {
+     font-weight: 800;
+     text-decoration: none;
+ }
+}
+.menu__link--button {
+  display: inline-block;
+  background-color: @coralHeading;
+  font-family: 'Fivo Sans';
+  font-weight: 400;
+  color:#fff;
+  font-size: 18px;
+  padding: 5px 52px 5px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: -4px;
+  cursor: pointer;
+    
+      &:last-child {
+			margin-right: 0px;
+		}
+    
+    &:hover {
+  color:#fff;
+  background-color: #e1138c;
+  text-decoration: none;
+}
+}
+
+.menu__link--current {
     color: @coralHeading;
    font-weight: 800;
     font-size: 18px;
     line-height: 36px;
-    margin-right: 50px;
+    margin-right: 80px;
     text-decoration: none;
     cursor: pointer;  
     
@@ -67,21 +119,6 @@ position: relative;
  }
 }
 
-.menu--element {
-    font-size: 18px;
-    line-height: 36px;
-    font-weight: 400;
-    color: #1c2056;
-    text-decoration: none;
-    margin-right: 50px;
-    cursor: pointer;  
-    
-    &:hover, &:active, &:focus {
-     font-weight: 800;
-     text-decoration: none;
- }
-}
-
 .container__header--text {
     margin-top: 80px;
     margin-left: 150px;
@@ -89,4 +126,11 @@ position: relative;
     margin-bottom: 140px;
     }
 
-
+.content {
+    max-width: auto;
+    
+    @media(min-width: 1800px){
+       max-width: 570px; 
+    }
+    
+}
